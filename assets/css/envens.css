@@ -25,7 +25,8 @@
   --envens-gray-rgb: 135, 140, 143;
   --envens-white: #ffffff;
   --envens-white-rgb: 255, 255, 255;
-  --envens-base: #144981  ;
+  --envens-base: #144981;
+  --envens-base2: #4B9CD3;
   --envens-base-rgb: 141, 153, 174;
   --envens-black: #030215;
   --envens-black-rgb: 3, 2, 21;
@@ -1074,7 +1075,7 @@ ul {
 .main-menu .main-menu__list>li:hover>a,
 .stricky-header .main-menu__list>li.current>a,
 .stricky-header .main-menu__list>li:hover>a {
-  color: var(--envens-base);
+  color: #4B9CD3;
 }
 
 .main-menu .main-menu__list>li>ul,
