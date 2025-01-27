@@ -338,6 +338,61 @@ ul {
 
 
 
+
+.thm-btn3 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none !important;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--envens-white);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 16px 10px 16px;
+  background-color: var(--envens-base);
+  border-radius: 5px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  overflow: hidden;
+  gap: 5px;
+  z-index: 1;
+}
+
+
+
+.thm-btn3::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 150%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: var(--envens-primary);
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  z-index: -1;
+}
+
+.thm-btn3:hover {
+  color: var(--envens-white);
+}
+
+.thm-btn3:hover::after {
+  bottom: -50%;
+}
+
+
+
+
 .thm-btn-two {
   position: relative;
   display: inline-flex;
@@ -2902,8 +2957,8 @@ ul {
 
 .main-slider-three__content-shape-1 {
   position: absolute;
-  bottom: 235px;
-  left: 540px;
+  bottom: 335px;
+  left: 650px;
   animation: topBottom 3s ease-in-out infinite;
 }
 
