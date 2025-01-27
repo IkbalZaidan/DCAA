@@ -43,6 +43,25 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/envens.css" />
     <link rel="stylesheet" href="assets/css/envens-responsive.css" />
+
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -98,7 +117,7 @@
                             </a>
                             <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
-                      
+
                     </div>
                 </div>
             </div>
@@ -198,7 +217,8 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <div class="main-slider-three__bg" style="background-image: url(assets/images/banner.PNG);"></div>
+                        <div class="main-slider-three__bg" style="background-image: url(assets/images/banner.PNG);">
+                        </div>
                         <div class="main-slider-three__shape-1 float-bob-x">
                             <img src="assets/images/shapes/main-slider-three-shape-1.png" alt="">
                         </div>
@@ -341,6 +361,12 @@
 
 
 
+        <!-- <section>
+            <div class="video-container">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </section> -->
 
         <!--About One Start-->
         <section class="about-one">
@@ -1059,7 +1085,7 @@
         <!--Event One End-->
 
         <!-- Sliding Text One Start -->
-        <section class="sliding-text-one">
+        <!-- <section class="sliding-text-one">
             <div class="sliding-text-one__wrap">
                 <ul class="sliding-text__list list-unstyled marquee_mode">
                     <li>
@@ -1074,7 +1100,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Sliding Text One End -->
 
         <!--Category One Start-->
@@ -1438,7 +1464,8 @@
                             <div class="site-footer__social">
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"> <img src="assets/images/icon/x-twitter-brands-solid.svg" width="18px" alt=""></a>
+                                <a href="#"> <img src="assets/images/icon/x-twitter-brands-solid.svg" width="18px"
+                                        alt=""></a>
                                 <a href="#"><i class="fab fa-youtube"></i></a>
 
                             </div>
