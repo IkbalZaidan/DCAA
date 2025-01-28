@@ -225,7 +225,7 @@ ul {
 
 .section-title__title {
   margin: 0;
-  color: var(--envens-black);
+  color: var(--envens-white);
   font-size: 55px;
   line-height: 65px;
   font-weight: 500;
@@ -7708,7 +7708,7 @@ a.team-two__social-three {
 .testimonial-one {
   position: relative;
   display: block;
-  background-color: #f6f6f6;
+  background-color: var(--envens-black);
   padding: 120px 0 120px;
   overflow: hidden;
   z-index: 1;
@@ -7979,6 +7979,7 @@ a.team-two__social-three {
   display: block;
   padding: 120px 0 95px;
   z-index: 1;
+  background: #171626;
 }
 
 .blog-two__top {
@@ -8896,7 +8897,7 @@ a.team-two__social-three {
 .feature-two__btn:before {
   content: "";
   position: absolute;
-  bottom: 25px;
+  bottom: 0px;
   left: 0;
   right: 66px;
   height: 1px;
