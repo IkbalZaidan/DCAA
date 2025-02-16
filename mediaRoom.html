@@ -255,8 +255,7 @@
                     <div class="col-xl-12 col-lg-12">
                         <div class="blog-details__right">
                             <div class="blog-details__img">
-                                <iframe width="100%" height="600" src="assets/mediaroom.mp4"
-                                    frameborder="0"
+                                <iframe width="100%" height="600" src="assets/mediaroom.mp4" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
@@ -264,11 +263,11 @@
                             <div class="blog-details__content">
                                 <div class="row">
                                     <div class="col-md-6 col-12">
-                                        <h3 class="blog-details__title-1 mb-0">The Title  
+                                        <h3 class="blog-details__title-1 mb-0">Interview Title
                                             <span class="live-indicator"></span>
-                                        <span class="live-text">Live</span>
+                                            <span class="live-text">Live</span>
                                         </h3>
-                                        <h4 class="blog-details__title-2">With Guest's Name</h4>
+                                        <h4 class="blog-details__title-2">Guest's Name</h4>
                                     </div>
                                     <div class="col-md-6 col-12 text-md-end text-start align-content-center">
                                         <span id="uae-date-time" class="date-time-text"></span>
@@ -278,57 +277,35 @@
                                 </div>
 
 
-                                <p class="blog-details__text-1">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Porro, laborum ex cupiditate molestiae eos ad assumenda eaque explicabo saepe
-                                    autem, sunt, dolore libero atque officia temporibus exercitationem neque reiciendis
-                                    repellendus!</p>
-                                <div class="blog-details__quote-and-text">
-                                    <div class="blog-details__quote">
-                                        <span class="fas fa-quote-left"></span>
-                                    </div>
-                                    <p class="blog-details__quote-text">Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing
-                                        elit. Porro, laborum ex cupiditate molestiae eos ad assumenda eaque explicabo
-                                        saepe
-                                        autem, sunt, dolore libero atque officia temporibus </p>
-                                </div>
                                 <ul class="blog-details__points list-unstyled">
                                     <li>
                                         <div class="blog-details__points-shape"></div>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>On-Site Media Center: Set up a dedicated media center at the event venue,
+                                            equipped with high-speed internet, workstations, and press kits. This will
+                                            provide journalists with a comfortable space to work and cover the event.
+                                        </p>
                                     </li>
                                     <li>
                                         <div class="blog-details__points-shape"></div>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Virtual Media Center: Establish a virtual media center for journalists
+                                            attending the event remotely. Provide access to live streams, recorded
+                                            sessions, and exclusive interviews with speakers and panelists.</p>
 
                                     </li>
                                     <li>
                                         <div class="blog-details__points-shape"></div>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Press Briefings: Schedule regular press briefings with key speakers and
+                                            organizers to provide updates and answer questions from the media.</p>
 
                                     </li>
                                     <li>
                                         <div class="blog-details__points-shape"></div>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <p>Virtual Interviews: Conduct virtual interviews with journalists attending
+                                            remotely. This allows for broader coverage and ensures that media outlets
+                                            from different regions can participate. These interviews can be shared on
+                                            social media and your PWA, maximizing the event's exposure.</p>
                                     </li>
                                 </ul>
-                                <p class="blog-details__quote-text-2">Lorem ipsum dolor, sit amet consectetur
-                                    adipisicing
-                                    elit. Porro, laborum ex cupiditate molestiae eos ad assumenda eaque explicabo saepe
-                                    autem, sunt, dolore libero atque officia temporibus </p>
-                                <!-- <div class="blog-details__social-box">
-                                    <p>Share:</p>
-                                    <div class="blog-details__social">
-                                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                                        <a href="#"><span class="fab fa-twitter"></span></a>
-                                        <a href="#"><span class="fab fa-instagram"></span></a>
-                                        <a href="#"><span class="fab fa-pinterest-p"></span></a>
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="comment-form__btn-box">
-                                    <button type="submit" class="comment-form__btn">Download Certificate</button>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -571,13 +548,13 @@
         function updateUaeDateTime() {
             let now = new Date();
             let options = { timeZone: "Asia/Dubai", hour12: false };
-            
+
             let uaeDate = now.toLocaleDateString("en-GB", options).split("/").reverse().join("-");
             let uaeTime = now.toLocaleTimeString("en-GB", options);
-            
+
             document.getElementById("uae-date-time").textContent = `${uaeDate} ${uaeTime}`;
         }
-        
+
         setInterval(updateUaeDateTime, 1000);
         updateUaeDateTime(); // Initial call
     </script>
